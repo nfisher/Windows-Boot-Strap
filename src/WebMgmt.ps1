@@ -5,6 +5,8 @@
 #
 # This script performs some common setup operations on the IIS 7 Web Management Service
 
+Import-Module ServerManager
+Add-WindowsFeature Web-Mgmt-Service
 
 $maxTracingLogFiles = "200"
 # CHANGE THIS TO YOUR DEPLOYMENT SERVER DETAILS IN THE MANAGEMENT PROFILE
